@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<config>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+
+            <admin>
+                <children>
+
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <stagem_cleaner translate="title" module="stagem_cleaner">
+                                        <title>Core Cache</title>
+                                        <sort_order>100</sort_order>
+                                    </stagem_cleaner>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+
+                </children>
+            </admin>
+
+        </resources>
+    </acl>
+</config>

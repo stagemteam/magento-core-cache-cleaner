@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <stagem translate="label">
+            <label>StageM</label>
+            <sort_order>5000</sort_order>
+        </stagem>
+    </tabs>
+    <sections>
+        <stagem_cleaner translate="label" module="stagem_cleaner">
+            <label>Core Cache</label>
+            <tab>stagem</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <groups>
+                <settings translate="label">
+                    <label>Cron Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <fields>
+                        <cron_schedule>
+                            <label>How often do you want the cron to run?</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <comment>Use Crontab Format (Eg. "*/5 * * * *" for every 5 minutes)</comment>
+                            <show_in_default>1</show_in_default>
+                        </cron_schedule>
+                    </fields>
+                </settings>
+            </groups>
+        </stagem_cleaner>
+    </sections>
+</config>

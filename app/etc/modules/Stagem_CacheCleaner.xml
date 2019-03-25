@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Stagem_CacheCleaner>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Stagem_CacheCleaner>
+    </modules>
+</config>

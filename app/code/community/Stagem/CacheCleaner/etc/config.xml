@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <stagem_cleaner>
+            <version>1.0.0</version>
+        </stagem_cleaner>
+    </modules>
+
+    <global>
+        <models>
+            <stagem_cleaner>
+                <class>Stagem CacheCleaner_Model</class>
+            </stagem_cleaner>
+        </models>
+        <helpers>
+            <stagem_cleaner>
+                <class>Stagem CacheCleaner_Helper</class>
+            </stagem_cleaner>
+        </helpers>
+    </global>
+    <default>
+        <stagem_cleaner>
+            <settings>
+                <cron_schedule>0 1 * * *</cron_schedule>
+            </settings>
+        </stagem_cleaner>
+    </default>
+    <crontab>
+        <jobs>
+            <stagem_cleaner>
+                <schedule>
+                    <config_path>stagem_cleaner/settings/cron_schedule</config_path>
+                </schedule>
+                <run><model>stagem_cleaner/cache::run</model></run>
+            </stagem_cleaner>
+        </jobs>
+    </crontab>
+
+</config>
