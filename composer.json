@@ -10,7 +10,6 @@
   "extra": {
     "map": [
       ["app/etc/modules/Stagem_CacheCleaner.xml", "app/etc/modules/Stagem_CacheCleaner.xml"],
-      ["app/locale/Stagem_CacheCleaner.csv", "app/locale/Stagem_CacheCleaner.csv"],
       ["app/code/community/Stagem/CacheCleaner/", "app/code/community/Stagem/CacheCleaner/"]
     ]
   }

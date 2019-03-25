@@ -5,7 +5,6 @@
             <version>1.0.0</version>
         </stagem_cleaner>
     </modules>
-
     <global>
         <models>
             <stagem_cleaner>
@@ -31,9 +30,10 @@
                 <schedule>
                     <config_path>stagem_cleaner/settings/cron_schedule</config_path>
                 </schedule>
-                <run><model>stagem_cleaner/cache::run</model></run>
+                <run>
+                    <model>stagem_cleaner/cache::run</model>
+                </run>
             </stagem_cleaner>
         </jobs>
     </crontab>
-
 </config>

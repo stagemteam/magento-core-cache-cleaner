@@ -1,6 +1,6 @@
 <?php
 
-class Stagem_CacheCleaning_Model_Cache
+class Stagem_CacheCleaner_Model_Cache
 {
     public function run()
     {
@@ -9,7 +9,6 @@ class Stagem_CacheCleaning_Model_Cache
         /** @var Magento_Db_Adapter_Pdo_Mysql $connection */
         $connection = $model->getDbAdapter();
         $table = Mage::getSingleton('core/resource')->getTableName('core/cache');
-        /* @see Varien_Db_Adapter_Pdo_Mysql */
         $connection->truncateTable($table);
         $connection->changeTableAutoIncrement($table, 1);
     }
