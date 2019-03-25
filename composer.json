@@ -1,0 +1,17 @@
+{
+  "name": "stagem/magento-core-cache-cleaner",
+  "type": "magento-module",
+  "license": "MIT Licence",
+  "description": "The module allows clearing core_cache table by cron schedule",
+  "authors": [{
+      "name": "Serhii Popov",
+      "email": "popow.serhii@gmail.com"
+  }],
+  "extra": {
+    "map": [
+      ["app/etc/modules/Stagem_CacheCleaner.xml", "app/etc/modules/Stagem_CacheCleaner.xml"],
+      ["app/locale/Stagem_CacheCleaner.csv", "app/locale/Stagem_CacheCleaner.csv"],
+      ["app/code/community/Stagem/CacheCleaner/", "app/code/community/Stagem/CacheCleaner/"]
+    ]
+  }
+}
