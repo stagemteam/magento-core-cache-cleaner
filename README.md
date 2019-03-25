@@ -12,7 +12,7 @@ Copty-past `app` folder in root of your project.
 If you use [`magento-composer-installer`](https://github.com/Cotya/magento-composer-installer) for managing your project dependencies
 then you can simply run 
 
-```php
+```bash
 composer require stagem/magento-core-cache-cleaner
 ```
 
